@@ -9,14 +9,14 @@ function CryptoList(props) {
     let liElements = cryptoList.map((cryptoObj) => {
         return(
             <li key={cryptoObj.currency}>
-                <span className="CryptoLabel">Last rate:</span> <span className={`CryptoRate ${cryptoObj.cssclass}`}>{cryptoObj.lastRate} {cryptoObj.htmlArray}</span>
+                <span className="CryptoLabel">Last rate:</span> <span className={`CryptoRate ${cryptoObj.cssClass}`}>{cryptoObj.lastRate} {cryptoObj.htmlArray}</span>
                 <span className="CurrencyTicker">{cryptoObj.currency}</span>
                 <span className="CurrencySymbol">[{cryptoObj.symbol}]</span>
             </li> 
         );
     })
 
-    console.log(cryptoList);
+    // console.log(cryptoList);
 
     return (
         <div className="CryptoList">
